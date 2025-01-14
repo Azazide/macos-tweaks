@@ -40,7 +40,7 @@ A script to optimize macOS performance, customize system settings, and enhance p
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/macos-tweaks.git
+   git clone https://github.com/Azazide/macos-tweaks.git
    ```
 2. Navigate to the directory:
    ```bash
