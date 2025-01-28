@@ -48,11 +48,11 @@ A script to optimize macOS performance, customize system settings, and enhance p
    ```
 3. Make the script executable:
    ```bash
-   chmod +x fix.sh
+   chmod +x tweaks.sh
    ```
 4. Run the script:
    ```bash
-   ./fix.sh
+   ./tweaks.sh
    ```
 
 ## Uninstallation
