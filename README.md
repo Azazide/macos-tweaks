@@ -55,6 +55,19 @@ A script to optimize macOS performance, customize system settings, and enhance p
    ./fix.sh
    ```
 
+## Uninstallation
+
+To uninstall and revert all the tweaks applied by `fix.sh`, use the provided `reset_to_defaults.sh` script:
+
+1. Make the script executable:
+   ```bash
+   chmod +x reset_to_defaults.sh
+   ```
+2. Run the script:
+   ```bash
+   ./reset_to_defaults.sh
+   ```
+
 ## Requirements
 
 - macOS with administrative privileges (required for certain system adjustments).
