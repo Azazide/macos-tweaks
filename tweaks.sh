@@ -59,7 +59,11 @@ defaults write com.apple.Spotlight SuggestionsEnabled -bool false
 # Отключение сбора данных Siri
 echo "Отключение аналитики Siri..."
 defaults write com.apple.assistant.support "UserEnabled" -bool false
+sudo defaults write com.apple.assistant.support "Assistant Enabled" -bool false
 defaults write com.apple.Siri "UserHasDeclinedEnable" -bool true
+sudo defaults write com.apple.analyticsd AutoSubmit -bool false
+sudo defaults write com.apple.analyticsd AutoSubmitVersion -int 0
+sudo launchctl disable system/com.apple.analyticsd
 
 # Отключение аналитики iCloud
 echo "Отключение аналитики iCloud..."

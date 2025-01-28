@@ -61,6 +61,9 @@ defaults delete com.apple.Spotlight SuggestionsEnabled
 echo "Включение аналитики Siri..."
 defaults delete com.apple.assistant.support "UserEnabled"
 defaults delete com.apple.Siri "UserHasDeclinedEnable"
+sudo defaults delete com.apple.analyticsd AutoSubmit
+sudo defaults delete com.apple.analyticsd AutoSubmitVersion
+sudo launchctl enable system/com.apple.analyticsd
 
 # Включение аналитики iCloud
 echo "Включение аналитики iCloud..."
