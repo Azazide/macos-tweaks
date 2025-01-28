@@ -99,7 +99,7 @@ defaults write com.apple.dock autohide-time-modifier -float 0.2
 
 # Отключение автоматического скрытия строки меню
 echo "Отключение автоматического скрытия строки меню..."
-defaults write NSGlobalDomain _HIHideMenuBar -bool false && killall SystemUIServer
+defaults write NSGlobalDomain _HIHideMenuBar -bool false
 
 # Уменьшение задержки при наведении файла на ярлык приложения в Dock
 echo "Уменьшение задержки при наведении файла на ярлык приложения в Dock..."
