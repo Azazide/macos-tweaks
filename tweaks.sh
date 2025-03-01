@@ -196,9 +196,12 @@ defaults write com.apple.TextEdit ShowRuler -bool true
 echo "Запрещаем создание .DS_Store в сетевых и удалённых папках (но это не работает для локальных)"
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
 
+echo "Режима разработчика (F12) в Safari"
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+
 # Применение изменений
 echo "Перезапуск сервисов для применения настроек..."
-killall cfprefsd && killall locationd && killall SystemUIServer && killall Finder && killall Dock && killall TextEdit
+killall cfprefsd && killall locationd && killall SystemUIServer && killall Finder && killall Dock && killall TextEdit && killall Safari 
 
 echo "Все настройки конфиденциальности обновлены."
 

@@ -193,9 +193,12 @@ defaults delete com.apple.TextEdit ShowRuler
 echo "Разрешаем создание .DS_Store в сетевых и удалённых папках"
 defaults delete com.apple.desktopservices DSDontWriteNetworkStores
 
+echo "Режима разработчика (F12) в Safari"
+defaults delete com.apple.Safari IncludeDevelopMenu
+
 # Применение изменений
 echo "Перезапуск сервисов для применения настроек..."
-killall cfprefsd && killall locationd && killall SystemUIServer && killall Finder && killall Dock && killall TextEdit
+killall cfprefsd && killall locationd && killall SystemUIServer && killall Finder && killall Dock && killall TextEdit && killall Safari
 
 echo "Все настройки сброшены к значениям по умолчанию."
 
